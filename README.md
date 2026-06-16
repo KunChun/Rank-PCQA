@@ -41,4 +41,19 @@ If you find this work helpful for your research, please consider citing:
 
 ---
 
+Here is a dedicated **Academic Research Use License** tailored specifically for your point cloud quality assessment code and dataset. 
+
+I have structured it to strictly permit non-commercial academic use while protecting your intellectual property and prohibiting commercial exploitation. You can copy and paste this directly into your `LICENSE` file on GitHub.
+
+---
+
+## License
+
+**Copyright (c) [2026] [Jilong Wang / PCL]**
+
+Permission is hereby granted, free of charge, to any person or organization obtaining a copy of this software, associated dataset, and/or documentation files, to use, copy, modify, merge, publish, distribute, and sublicense copies of the Materials, **exclusively for non-commercial academic research and educational purposes**.
+
+---
+
+
 **⭐ If you find this repository useful, please consider giving it a star!**
