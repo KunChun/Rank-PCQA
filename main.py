@@ -71,7 +71,7 @@ def finetune_train(args, fold_num, flag='regress'):
     logging.info(f"=> Loading model from ckpts'{args.arch}'")
     model = get_model(args.arch, pretrained=True, num_class=args.num_classes)
     state_dict = torch.load(os.path.join(args.ckpts, args.database, 'rank_' + args.arch + '_fold_' + str(fold_num) + '_margin' + str(args.margin) + '.pth'))
-    # state_dict = torch.load(os.path.join(args.ckpts, 'p3qa', 'rank_' + args.arch + '_fold_' + str(fold_num) + '_margin' + str(args.margin) + '.pth'))
+    # state_dict = torch.load(os.path.join(args.ckpts, 'pclpcqa', 'rank_' + args.arch + '_fold_' + str(fold_num) + '_margin' + str(args.margin) + '.pth'))
     model.load_state_dict(state_dict)
 
     # get training tools
@@ -137,8 +137,8 @@ def evaluate_results(args, fold_num):
 def my_parse_args():
     parser = argparse.ArgumentParser(description="training")
 
-    parser.add_argument('--database', default='lspcqa', type=str, help='数据集: sjtu, wpc, p3qa, ...')
-    parser.add_argument('--k_fold', default=5, type=int, help='9 for the SJTU-PCQA, 5 for the WPC and P3QA, 4 for the WPC2.0')
+    parser.add_argument('--database', default='lspcqa', type=str, help='数据集: sjtu, wpc, pclpcqa, ...')
+    parser.add_argument('--k_fold', default=5, type=int, help='9 for the SJTU-PCQA, 5 for the WPC and pclpcqa, 4 for the WPC2.0')
     parser.add_argument('--epochs', default=10, type=int, metavar='N', help='训练epoch数，默认：85')
     parser.add_argument('--arch', metavar='ARCH', default='resnet34', help='模型结构，默认：efficientnet-b0')  # efficientnet-b0
     parser.add_argument('--margin', default=0.1, type=float, help='margin ranking loss的margin值，默认为：0.0')
