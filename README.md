@@ -6,6 +6,10 @@
 
 ---
 
+<img width="1404" height="1072" alt="image" src="https://github.com/user-attachments/assets/062e64a0-12a3-411d-89c2-ed117ceea227" />
+
+---
+
 ## 📖 Introduction
 
 In this work, we first introduce the PCL-PCQA database, a newly constructed large-scale PCQA database comprising 1,599 subjectively evaluated distorted point cloud samples with diverse geometric and textural distortions, derived from 39 high-quality reference point clouds and labeled with reliable mean opinion scores (MOS) following the ITU-R BT.500 standard. Second, we propose a novel ranking-based no-reference PCQA model, Rank-PCQA, which leverages prior knowledge from inherent quality rankings embedded in distortion levels through a two-stage learning pipeline. 
