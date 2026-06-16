@@ -166,9 +166,6 @@ def my_parse_args():
     parser.add_argument('-p', '--print-freq', default=50, type=int, metavar='N', help='训练过程中的信息打印，每隔多少个batch打印一次，默认: 50')
     parser.add_argument('--pretrained', default=True, dest='pretrained', action='store_true', help='是否使用预训练模型，默认不使用')
 
-    # parser.add_argument('--criterion', default='rank', type=str, help='使用的损失函数，默认 rank，可选 emd，regress（打标数据集格式不一样）')
-    # parser.add_argument('--advprop', default=False, action='store_true', help='使用advprop的预训练模型，默认否，主要针对EfficientNet系列')
-
     args = parser.parse_args()
 
     return args
